@@ -56,10 +56,12 @@ namespace RpgApi.Controllers
             personagens.RemoveAll( p => p.Id == id );
             return Ok(personagens);
         }
-    public IActionResult UpdatePersonagem(Personagem p)
+   /* public IActionResult UpdatePersonagem(Personagem p)
         {
-            Personagem personagemAlterado = personagens.
-        }
+            Personagem personagemAlterado = personagens;
+        }*/
+
+  
     
     
     

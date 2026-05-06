@@ -25,12 +25,10 @@ namespace RpgApi.Controllers
             new Personagem() { Id = 7, Nome = "Radagast",   PontosVida=100, Forca=25, Defesa=11, Inteligencia=35, Classe=ClasseEnum.Mago }
         };
 
-        public ClasseEnum Classe { get; set; }
-        public byte[]? FotoPersonagem { get; set; }
-        public int? UsuarioId { get; set; }
-        public Usuario? Usuario { get; set; }
+    
+  
 
-        [HttpGet("GetByNome/{nome}")]
+        /*[HttpGet("GetByNome/{nome}")]
         public IActionResult selecionep(string nome)
         {
             Personagem pBusca = personagens.FirstOrDefault(pe => pe.Nome == nome);
@@ -90,7 +88,7 @@ namespace RpgApi.Controllers
              personagens.FindAll(x => x.Classe == enumDigitado);
 
              return Ok(busca);
-        }
+        }*/
 
         
 

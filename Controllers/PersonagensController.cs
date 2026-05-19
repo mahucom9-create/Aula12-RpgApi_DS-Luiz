@@ -10,11 +10,11 @@ using RpgApi.Models;
 namespace RpgApi.Controllers
 {
     [ApiController]
-    [Route("[Controllers]")]
-    public class PersonagensControllers : ControllerBase
+    [Route("[Controller]")]
+    public class PersonagensController : ControllerBase
     {
         private readonly DataContext _context;
-        public PersonagensControllers(DataContext context)
+        public PersonagensController(DataContext context)
         {
             _context = context;
         }
@@ -48,7 +48,7 @@ namespace RpgApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> add(Personagem novoPersonagem)
+        public async Task<IActionResult> Add(Personagem novoPersonagem)
         {
             try
             {

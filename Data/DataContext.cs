@@ -118,7 +118,7 @@ namespace RpgApi.Data
 
 
             modelBuilder.Entity<Disputa>().HasKey(d => d.Id);
-
+           //abaixo, mapeamento do nome das colunas da tabela para as propriedades de classe
             modelBuilder.Entity<Disputa>().Property(d => d.DataDisputa).HasColumnName("Dt_DISPUTAS");
             modelBuilder.Entity<Disputa>().Property(d => d.AtacanteId).HasColumnName("AtacanteId");
             modelBuilder.Entity<Disputa>().Property(d => d.OponenteId).HasColumnName("OponenteId");
